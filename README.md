@@ -7,8 +7,8 @@ Aplicación web interactiva y sistema de presentación docente para la planifica
 ## ✨ Características Principales
 
 - **Vista en Planta Arquitectónica Interactiva (6 m × 4 m)**:
-  - Distribución fiel al anexo curricular con cotas perimetrales (6 m y 4 m).
-  - Capas de visualización seleccionables: *Plano Real*, *Zonificación Acústica*, *Rutas de Circulación y Evacuación*, y *Cotas Métricas*.
+  - Distribución fiel al anexo curricular con medidas perimetrales (6 m y 4 m).
+  - Capas de visualización seleccionables: *Plano Real*, *Zonificación Acústica*, *Rutas de Circulación y Evacuación*, y *Medidas Técnicas*.
   - 6 mesas centrales de trabajo colaborativo para alumnos (12 a 18 puestos).
   - Estación docente frontal con línea de visión de 360° hacia los sectores y puerta de acceso.
 

@@ -73,7 +73,7 @@ export const PlanCanvas: React.FC<PlanCanvasProps> = ({
           </button>
           <button
             onClick={() => onChangeLayer('dimensions')}
-            title="Cotas y medidas técnicas"
+            title="Medidas técnicas"
             className={`flex items-center gap-1 px-2.5 py-1 rounded-md font-medium transition-colors cursor-pointer ${
               activeLayer === 'dimensions'
                 ? 'bg-indigo-500 text-white font-semibold shadow-sm'
@@ -81,7 +81,7 @@ export const PlanCanvas: React.FC<PlanCanvasProps> = ({
             }`}
           >
             <Ruler className="w-3.5 h-3.5" />
-            <span className="hidden sm:inline">Cotas</span>
+            <span className="hidden sm:inline">Medida</span>
           </button>
         </div>
       </div>
@@ -121,7 +121,7 @@ export const PlanCanvas: React.FC<PlanCanvasProps> = ({
             </filter>
           </defs>
 
-          {/* BACKGROUND COTAS (OUTER LABELS) */}
+          {/* BACKGROUND MEDIDAS (OUTER LABELS) */}
           {/* Top Dimension: 6 m */}
           <g>
             <line x1="80" y1="28" x2="920" y2="28" stroke="#1e293b" strokeWidth="2.5" />
