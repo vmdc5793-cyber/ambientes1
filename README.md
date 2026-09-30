@@ -82,15 +82,26 @@ Si deseas modificar el código fuente con recarga en vivo:
 
 ---
 
-## 🌐 Despliegue en GitHub Pages
+## 🌐 Despliegue en GitHub Pages (Carga Ultrarrápida)
 
-Este proyecto ya viene configurado con un flujo de trabajo automatizado de **GitHub Actions** (`.github/workflows/deploy.yml`):
+El proyecto está optimizado para cargar en menos de 1 segundo en GitHub Pages mediante dos opciones de configuración:
 
-1. Sube tu proyecto a un repositorio de GitHub (rama `main` o `master`).
-2. En GitHub, ve a **Settings** → **Pages**.
-3. En la sección **Build and deployment** > **Source**, selecciona **GitHub Actions**.
-4. ¡Listo! Cada vez que hagas `git push`, GitHub compilará automáticamente el proyecto y lo publicará en tu enlace de GitHub Pages:
-   `https://TU_USUARIO.github.io/TU_REPOSITORIO/`
+### Opción A (Recomendada: Directa sin compilación en la nube)
+1. Ve a tu repositorio en GitHub: **Settings** → **Pages**.
+2. En **Build and deployment** → **Source**, selecciona: **Deploy from a branch**.
+3. Selecciona la rama **`main`** y la carpeta **`/docs`**.
+4. Haz clic en **Save**. ¡Tu presentación cargará al instante en segundos!
+
+### Opción B (Con GitHub Actions)
+1. En **Settings** → **Pages**, en **Source** selecciona **GitHub Actions**.
+2. GitHub ejecutará automáticamente el archivo `.github/workflows/deploy.yml` en cada push y publicará la versión optimizada desde `dist/`.
+
+---
+
+## ⚡ Optimizaciones de Rendimiento Aplicadas
+- **HTML ultraligero**: El archivo `index.html` pasa de 6.3 MB a solo 2.6 KB (1.1 KB con compresión gzip).
+- **Carga asíncrona de recursos**: Los estilos, scripts y fotografías de los sectores cargan en paralelo sin bloquear la interfaz.
+- **Doble soporte**: Incluye la versión web ultrarrápida (`dist/` y `docs/`) y el archivo ejecutable offline (`aula_modelo_interactiva.html`) para doble clic sin internet.
 
 ---
 

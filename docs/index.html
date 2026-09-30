@@ -13,21 +13,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Outfit:wght@500;600;700;800&display=swap" rel="stylesheet" />
-    <script id="file-redirect">
-      // 1. Si se abre directamente con doble clic en el explorador de archivos local (file://):
-      if (window.location.protocol === 'file:') {
-        var path = window.location.pathname || '';
-        if (!path.includes('aula_modelo_interactiva')) {
-          window.location.replace('./aula_modelo_interactiva.html');
-        }
-      }
-      // 2. Si se ejecuta en GitHub Pages desde la raíz del repositorio, redirige instantáneamente a /docs/ (versión compilada ultrarrápida):
-      else if (window.location.hostname.endsWith('github.io') && !window.location.pathname.includes('/docs/')) {
-        var p = window.location.pathname;
-        if (!p.endsWith('/')) p += '/';
-        window.location.replace(window.location.origin + p + 'docs/');
-      }
-    </script>
+    <script type="module" crossorigin src="./assets/index-DYTCQN5U.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/index-M-oEZ98Q.css">
   </head>
   <body class="bg-slate-900 text-slate-100 antialiased selection:bg-teal-500 selection:text-white">
     <div id="root">
@@ -41,11 +28,8 @@
           </div>
         </noscript>
       </div>
-      <style>
-        @keyframes spin { to { transform: rotate(360deg); } }
-      </style>
+      <style>@keyframes spin{to{transform:rotate(360deg)}}</style>
     </div>
-    <script type="module" src="./src/main.tsx"></script>
   </body>
 </html>
 

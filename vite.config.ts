@@ -14,12 +14,15 @@ function stripFileRedirectPlugin() {
 }
 
 export default defineConfig(({command}) => {
+  const isSingleFile = process.env.BUILD_SINGLEFILE === 'true';
+
   return {
     base: command === 'build' ? './' : '/',
     plugins: [
       react(),
       tailwindcss(),
-      ...(command === 'build' ? [stripFileRedirectPlugin(), viteSingleFile()] : []),
+      ...(command === 'build' ? [stripFileRedirectPlugin()] : []),
+      ...(isSingleFile ? [viteSingleFile()] : []),
     ],
     resolve: {
       alias: {
