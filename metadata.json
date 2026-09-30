@@ -1,0 +1,6 @@
+{
+  "name": "Aula Modelo 6x4m - Sectores de Aprendizaje",
+  "description": "Diapositiva de presentación y explorador interactivo del diseño y distribución de sectores de aprendizaje en aula de 6 m × 4 m.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
